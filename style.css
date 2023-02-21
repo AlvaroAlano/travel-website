@@ -15,7 +15,7 @@ body {
 }
 
 .banner {
-  background-image: url("/images/attractions/mountains.jpg");
+  background-image: url("./images/attractions/mountains.jpg");
   justify-content: center;
   background-position: center;
   background-size: cover;
@@ -247,7 +247,7 @@ input:focus {
   height: 350px;
 }
 .image1 {
-  background-image: url("/images/attractions/betocarrero.jpg");
+  background-image: url("./images/attractions/betocarrero.jpg");
   justify-content: center;
   background-position: center;
   background-size: cover;
@@ -258,7 +258,7 @@ input:focus {
   box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
 }
 .image2 {
-  background-image: url("/images/attractions/disneyworld.jpg");
+  background-image: url("./images/attractions/disneyworld.jpg");
   justify-content: center;
   background-position: center;
   background-size: cover;
@@ -269,7 +269,7 @@ input:focus {
   box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
 }
 .image3 {
-  background-image: url("/images/attractions/universal.jpg");
+  background-image: url("./images/attractions/universal.jpg");
   justify-content: center;
   background-position: center;
   background-size: cover;
