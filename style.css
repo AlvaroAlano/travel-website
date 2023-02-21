@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --main-orange: #ff7a00;
+  --gray: #939393;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+.container {
+  padding: 0 20px 0 20px;
+}
+
+.banner {
+  background-image: url("/images/attractions/mountains.jpg");
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  border-radius: 0 0 50px 50px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 300px;
+  height: 70px;
+}
+.home {
+  font-size: 26px;
+  color: #fff;
+}
+.home span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.home span:hover {
+  border-bottom: 5px solid var(--main-orange);
+}
+.logo img {
+  width: 70px;
+  cursor: pointer;
+}
+.registerButton {
+  border: none;
+  width: 160px;
+  height: 40px;
+  font-size: 24px;
+  background-color: var(--main-orange);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.registerButton:hover {
+  background-color: #d46700;
+  transition: 0.2s;
+  -webkit-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+}
+.areaIntroduction{
+  padding: 0 300px;
+}
+.areaIntroduction h1 {
+  margin-top: 100px;
+  font-size: 48px;
+  width: 50%;
+  color: #fff;
+  font-weight: 400;
+}
+.areaIntroduction h2 {
+  margin-top: -30px;
+  font-size: 24px;
+  width: 40%;
+  color: #fff;
+  font-weight: 400;
+}
+.areaSearch {
+  margin-top: 70px;
+  padding: 0 300px;
+}
+.topSearch {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  width: 373px;
+  height: 57px;
+  border-radius: 15px 15px 0 0;
+}
+.topSearch span {
+  cursor: pointer;
+}
+.topSearch span:hover {
+  border-bottom: 5px solid var(--main-orange);
+}
+.form {
+  display: flex;
+  height: 122px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0 15px 15px 15px;
+}
+.form div {
+  margin-left: 30px;
+}
+.form span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray);
+}
+.form input {
+  border: none;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.localization input,
+.people input {
+  border-bottom: 2px solid #8a8a8a;
+  width: 210px;
+}
+input:focus {
+  outline: 0;
+}
+.buttonSearch {
+  border: none;
+  width: 140px;
+  height: 40px;
+  font-size: 24px;
+  background-color: var(--main-orange);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 60px;
+}
+.buttonSearch:hover {
+  background-color: #d46700;
+  transition: 0.2s;
+  -webkit-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+}
+.destinations {
+  display: flex;
+  padding: 0 300px;
+  position: relative;
+  top: -40px;
+}
+.dest--left {
+  width: 70%;
+}
+.dest--left h1 {
+  font-size: 50px;
+  margin-top: 150px;
+}
+.dest--left h3 {
+  font-size: 18px;
+  font-weight: 400;
+  width: 50%;
+  color: var(--gray);
+  margin-left: 10px;
+  margin-top: 80px;
+}
+.dest--left .line {
+  border-left: 5px solid var(--main-orange);
+}
+.areaDestinations h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-orange);
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 130px;
+  margin-bottom: 15px;
+}
+.areaLocations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 100px;
+}
+.areaDestinations span {
+  font-size: 30px;
+  letter-spacing: -2px;
+  word-spacing: -1px;
+  cursor: pointer;
+}
+.dest--right {
+  width: 30%;
+}
+.dest--right img {
+  width: 100%;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 10px 7px 31px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 31px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 31px -8px rgba(0, 0, 0, 0.75);
+}
+.popularCategory {
+  padding: 0 300px;
+  margin-top: -30px;
+  margin-bottom: 150px;
+}
+.popularCategory h1 {
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin: 0 auto;
+}
+.category span {
+  font-size: 30px;
+  color: var(--gray);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.category span:hover {
+  border: 1px solid var(--main-orange);
+  border-radius: 15px;
+  background-color: var(--main-orange);
+  color: #fff;
+  padding: 5px 10px;
+}
+.areaPackages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.areaPackages .packages {
+  width: 300px;
+  height: 350px;
+}
+.image1 {
+  background-image: url("/images/attractions/betocarrero.jpg");
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+}
+.image2 {
+  background-image: url("/images/attractions/disneyworld.jpg");
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+}
+.image3 {
+  background-image: url("/images/attractions/universal.jpg");
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+}
+.buttonPackage {
+  border: none;
+  width: 160px;
+  height: 40px;
+  font-size: 24px;
+  background-color: var(--main-orange);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
+}
+.btn {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: -20px;
+}
+.buttonPackage:hover {
+  background-color: #db6a00;
+}
+.comments{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0 300px;
+}
+.comments h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 34px;
+}
+.areaComments{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.comment{
+  width: 25%;
+  background-color: #c0c0c0;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment img{
+  width: 50px;
+  border-radius: 50px;
+}
+.comment h2{
+  width: 200px;
+  margin-left: 30px;
+}
+.comment h3{
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  color: #7a7a7a;
+  font-size: 13px;
+  position: relative;
+  top: -20px;
+  left: -32px;
+}
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: var(--main-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h1{
+  font-size: 32px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.app{
+  width: 30%;
+}
+.apps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+}
+.offers{
+  width: 30%;
+}
+.offers img{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.payments{
+  width: 30%;
+}
+.payments img{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
