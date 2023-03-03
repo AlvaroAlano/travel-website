@@ -692,7 +692,7 @@ footer h1 {
     padding-top: 10px;
   }
   .form div {
-    margin: 10px;
+    margin: 5px;
     padding: 0px;
   }
   .form span {
@@ -717,69 +717,71 @@ footer h1 {
     width: 100%;
   }
   .dest--left h1 {
-  font-size: 42px;
-  display: flex;
-  justify-content: center;
-  margin: 100px 0px 0 30px;
-}
-.dest--left h3 {
-  font-size: 18px;
-  width: 90%;
-  margin-top: 30px;
-}
-.areaDestinations h2 {
-  margin-top: 40px;
-}
-.areaLocations {
-  padding: 0 20px;
-}
-.dest--right {
-  width: 100%;
-  margin-top: 60px;
-}
-.popularCategory {
-  padding: 0 20px;
-}
-.popularCategory h1{
-  font-size: 30px;
-  text-align: center;
-}
-.category {
-  width: 100%;
-}
-.areaPackages {
-  flex-direction: column;
-  gap: 50px;
-}
-.areaPackages .packages {
-  width: 90%;
-}
-.comments {
-  padding: 0 20px;
-}
-.comments h1 {
-  width: 100%;
-  text-align: center;
-}
-.comment{
-  width: 90%;
-}
-footer {
-  flex-direction: column;
-  height: 320px;
-}
-footer h1 {
-  font-size: 22px;
-}
-.app {
-  width: 80%;
-  margin-bottom: -50px;
-}
-.offers {
-  width: 80%;
-  margin-bottom: -50px;
-}
-.payments{
-  width: 80%;
-}
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 0 30px;
+  }
+  .dest--left h3 {
+    font-size: 18px;
+    width: 90%;
+    margin-top: 30px;
+  }
+  .areaDestinations h2 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .areaLocations {
+    padding: 0 20px;
+  }
+  .dest--right {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .popularCategory {
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+  .popularCategory h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .category {
+    width: 100%;
+  }
+  .areaPackages {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .areaPackages .packages {
+    width: 90%;
+  }
+  .comments {
+    padding: 0 20px;
+  }
+  .comments h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .comment {
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    height: 320px;
+  }
+  footer h1 {
+    font-size: 22px;
+  }
+  .app {
+    width: 80%;
+    margin-bottom: -50px;
+  }
+  .offers {
+    width: 80%;
+    margin-bottom: -50px;
+  }
+  .payments {
+    width: 80%;
+  }
 }
