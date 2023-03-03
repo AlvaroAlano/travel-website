@@ -29,16 +29,23 @@ body {
   padding: 0 300px;
   height: 70px;
 }
-.home {
+ul {
   font-size: 26px;
   color: #fff;
+  display: flex;
+  gap: 35px;
 }
-.home span {
-  margin-left: 20px;
+ul li {
+  list-style: none;
   cursor: pointer;
+  text-decoration: none;
 }
-.home span:hover {
+ul li:hover {
   border-bottom: 5px solid var(--main-orange);
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 .logo img {
   width: 70px;
@@ -61,7 +68,16 @@ body {
   -moz-box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 19px 1px rgba(0, 0, 0, 0.75);
 }
-.areaIntroduction{
+.buttonPhone {
+  display: none;
+  font-size: 40px;
+  color: var(--main-orange);
+  text-decoration: none;
+}
+.areaButtonPhone {
+  background-color: red;
+}
+.areaIntroduction {
   padding: 0 300px;
 }
 .areaIntroduction h1 {
@@ -231,11 +247,7 @@ input:focus {
   margin-bottom: 50px;
 }
 .category span:hover {
-  border: 1px solid var(--main-orange);
-  border-radius: 15px;
-  background-color: var(--main-orange);
-  color: #fff;
-  padding: 5px 10px;
+  color: var(--main-orange);
 }
 .areaPackages {
   display: flex;
@@ -302,24 +314,24 @@ input:focus {
 .buttonPackage:hover {
   background-color: #db6a00;
 }
-.comments{
+.comments {
   margin-top: 100px;
   margin-bottom: 50px;
   padding: 0 300px;
 }
-.comments h1{
+.comments h1 {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   font-size: 34px;
 }
-.areaComments{
+.areaComments {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
-.comment{
+.comment {
   width: 25%;
   background-color: #c0c0c0;
   border-radius: 15px;
@@ -327,15 +339,15 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
 }
-.comment img{
+.comment img {
   width: 50px;
   border-radius: 50px;
 }
-.comment h2{
+.comment h2 {
   width: 200px;
   margin-left: 30px;
 }
-.comment h3{
+.comment h3 {
   display: flex;
   padding: 0;
   margin: 0 auto;
@@ -345,7 +357,7 @@ input:focus {
   top: -20px;
   left: -32px;
 }
-footer{
+footer {
   width: 100%;
   height: 200px;
   background-color: var(--main-orange);
@@ -353,40 +365,421 @@ footer{
   justify-content: center;
   align-items: center;
 }
-footer h1{
-  font-size: 32px;
+footer h1 {
+  font-size: 26px;
   font-weight: 400;
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.app{
-  width: 30%;
+.app {
+  width: 20%;
 }
-.apps{
+.apps {
   display: flex;
+  width: 100px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   gap: 15px;
 }
-.offers{
-  width: 30%;
+.offers {
+  width: 20%;
 }
-.offers img{
-  width: 300px;
+.offers img {
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+.payments {
+  width: 20%;
+}
+.payments img {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1797px) {
+  .header {
+    padding: 0 200px;
+  }
+  .areaIntroduction {
+    padding: 0 200px;
+  }
+  .areaSearch {
+    padding: 0 200px;
+  }
+  .buttonSearch {
+    margin-left: 120px;
+  }
+  .destinations {
+    padding: 0 200px;
+  }
+  .popularCategory {
+    padding: 0 200px;
+  }
+  .comments {
+    padding: 0 200px;
+  }
+}
+@media (max-width: 1597px) {
+  .header {
+    padding: 0 100px;
+  }
+  .areaIntroduction {
+    padding: 0 100px;
+  }
+  .areaSearch {
+    padding: 0 100px;
+  }
+  .buttonSearch {
+    margin-left: 120px;
+  }
+  .destinations {
+    padding: 0 100px;
+  }
+  .popularCategory {
+    padding: 0 100px;
+  }
+  .comments {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .areaIntroduction h1 {
+    width: 70%;
+  }
+  .form input {
+    font-size: 18px;
+  }
+  .buttonSearch {
+    margin-left: 30px;
+  }
+  .dest--left h1 {
+    font-size: 45px;
+    margin-top: 110px;
+  }
+  .dest--left h3 {
+    width: 60%;
+    margin-top: 70px;
+  }
+  .areaDestinations h2 {
+    margin-top: 110px;
+  }
+  footer {
+    gap: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  .areaIntroduction h1 {
+    font-size: 44px;
+    width: 70%;
+  }
+  .areaIntroduction h2 {
+    font-size: 22px;
+    width: 50%;
+  }
+  .topSearch {
+    font-size: 18px;
+    width: 250px;
+  }
+  .form {
+    height: 170px;
+    flex-wrap: wrap;
+  }
+  .form span {
+    font-size: 16px;
+  }
+  .form input {
+    font-size: 18px;
+  }
+  .localization input,
+  .people input {
+    width: 150px;
+  }
+  .buttonSearch {
+    width: 80%;
+  }
+  .dest--left {
+    width: 65%;
+  }
+  .dest--left h1 {
+    font-size: 45px;
+    margin-top: 110px;
+  }
+  .dest--left h3 {
+    width: 60%;
+    margin-top: 70px;
+  }
+  .dest--right {
+    width: 35%;
+  }
+  .dest--right img {
+    width: 100%;
+  }
+}
+@media (max-width: 884px) {
+  .container {
+    padding: 0;
+  }
+  .header {
+    padding: 0 40px;
+  }
+  .areaIntroduction {
+    padding: 0 40px;
+  }
+  .areaIntroduction h1 {
+    width: 80%;
+  }
+  .topSearch {
+    font-size: 18px;
+    width: 250px;
+  }
+  .areaSearch {
+    margin-top: 50px;
+    padding: 0 40px;
+  }
+  .form {
+    height: 170px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .form div {
+    margin: 30px 0;
+  }
+  .buttonSearch {
+    margin-top: -60px;
+    margin-left: 0px;
+  }
+  .destinations {
+    padding: 0 40px;
+  }
+  .dest--left {
+    width: 65%;
+  }
+  .dest--left h1 {
+    font-size: 35px;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  .dest--left h3 {
+    font-size: 16px;
+    margin-top: 60px;
+  }
+  .dest--left .line {
+    margin-left: 30px;
+  }
+  .areaDestinations h2 {
+    margin-top: 90px;
+    font-size: 30px;
+  }
+  .areaDestinations span {
+    font-size: 22px;
+  }
+  .dest--right {
+    width: 35%;
+  }
+  .popularCategory {
+    padding: 0 40px;
+    margin-top: -30px;
+    margin-bottom: 150px;
+  }
+  .popularCategory h1 {
+    font-size: 30px;
+  }
+  .category span {
+    font-size: 24px;
+  }
+  .areaPackages .packages {
+    width: 200px;
+    height: 250px;
+  }
+  .comments {
+    margin-top: 80px;
+    padding: 0 40px;
+  }
+  .comment {
+    width: 40%;
+  }
+  .comments h1 {
+    width: 500px;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .comment h3 {
+    top: -20px;
+    left: -25px;
+  }
+  .areaComments {
+    gap: 20px;
+  }
+  .comment h2 {
+    font-size: 20px;
+    width: 200px;
+    margin-left: 30px;
+  }
+  footer h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 0;
+  }
+  .header {
+    padding: 0;
+  }
+  .areaIntroduction {
+    padding: 0 20px;
+  }
+  .areaIntroduction h1 {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .registerButton {
+    display: none;
+  }
+  .buttonPhone {
+    display: block;
+  }
+  .banner {
+    border-radius: 0 0 0 0;
+  }
+  .header {
+    padding: 10px 10px;
+  }
+  .areaIntroduction {
+    padding: 0 10px;
+  }
+  .areaIntroduction h1 {
+    font-size: 28px;
+    width: 90%;
+    margin-top: 25px;
+  }
+  .areaIntroduction h2 {
+    font-size: 18px;
+    width: 80%;
+    margin-top: 0px;
+  }
+  .areaSearch {
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  .topSearch {
+    width: 100%;
+  }
+  .topSearch span {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .form {
+    border-radius: 0 0 15px 15px;
+    height: 240px;
+    padding-top: 10px;
+  }
+  .form div {
+    margin: 10px;
+    padding: 0px;
+  }
+  .form span {
+    font-size: 16px;
+  }
+  .form input {
+    font-size: 15px;
+  }
+  .localization input,
+  .people input {
+    width: 120px;
+  }
+  .buttonSearch {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .destinations {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  .dest--left {
+    width: 100%;
+  }
+  .dest--left h1 {
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px 0 30px;
+}
+.dest--left h3 {
+  font-size: 18px;
+  width: 90%;
+  margin-top: 30px;
+}
+.areaDestinations h2 {
+  margin-top: 40px;
+}
+.areaLocations {
+  padding: 0 20px;
+}
+.dest--right {
+  width: 100%;
+  margin-top: 60px;
+}
+.popularCategory {
+  padding: 0 20px;
+}
+.popularCategory h1{
+  font-size: 30px;
+  text-align: center;
+}
+.category {
+  width: 100%;
+}
+.areaPackages {
+  flex-direction: column;
+  gap: 50px;
+}
+.areaPackages .packages {
+  width: 90%;
+}
+.comments {
+  padding: 0 20px;
+}
+.comments h1 {
+  width: 100%;
+  text-align: center;
+}
+.comment{
+  width: 90%;
+}
+footer {
+  flex-direction: column;
+  height: 320px;
+}
+footer h1 {
+  font-size: 22px;
+}
+.app {
+  width: 80%;
+  margin-bottom: -50px;
+}
+.offers {
+  width: 80%;
+  margin-bottom: -50px;
 }
 .payments{
-  width: 30%;
+  width: 80%;
 }
-.payments img{
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }

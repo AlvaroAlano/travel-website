@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
   <head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,12 +15,17 @@
           <div class="logo">
             <img src="./images/others/logotipo.png" alt="" />
           </div>
-          <div class="home">
-            <span>Home</span>
-            <span>Destino</span>
-            <span>Depoimentos</span>
-          </div>
+          <nav class="menu">
+            <ul class="home">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#destiny">Destinos</a></li>
+              <li><a href="#comments">Depoimentos</a></li>
+            </ul>
+          </nav>
           <button class="registerButton">Cadastrar-se</button>
+            <a href="#" class="buttonPhone">
+              <i class="ph-list-thin"></i>
+            </a>
         </header>
         <div class="areaIntroduction">
           <h1>
@@ -60,7 +66,7 @@
           </div>
         </div>
       </section>
-      <section class="destinations">
+      <section class="destinations" id="destiny">
         <div class="dest--left">
           <h1>
             Olhe nossas<br />
@@ -131,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="comments">
+      <section class="comments" id="comments">
         <h1>Veja o que nossos cliente dizem sobre nossos serviços</h1>
         <div class="areaComments">
           <div class="comment">
@@ -238,5 +244,6 @@
         </div>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
