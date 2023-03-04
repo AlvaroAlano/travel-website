@@ -705,6 +705,14 @@ footer h1 {
   .people input {
     width: 120px;
   }
+  .areaCheck{
+    display: flex;
+    gap: 10px;
+  }
+  .checkin input,
+  .checkout input {
+    font-size: 14px;
+  }
   .buttonSearch {
     margin-top: -10px;
     margin-bottom: 20px;
@@ -783,9 +791,5 @@ footer h1 {
   }
   .payments {
     width: 80%;
-  }
-  .checkin input,
-  .checkout input {
-    font-size: 12px;
   }
 }
