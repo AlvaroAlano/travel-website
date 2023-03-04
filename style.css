@@ -784,4 +784,8 @@ footer h1 {
   .payments {
     width: 80%;
   }
+  .checkin input,
+  .checkout input {
+    font-size: 12px;
+  }
 }
